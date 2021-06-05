@@ -1,9 +1,13 @@
 import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
 
 export default function ApplicationViews() {
     return (
         <main>
             <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
                 {/* Login screen and register screens */}
                 <Route path="/login">
                     {/* <Login /> */}
