@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import { CharacterSheet } from "./characterSheet/CharacterSheet";
 import Home from "./Home";
 
 export default function ApplicationViews() {
@@ -29,7 +30,7 @@ export default function ApplicationViews() {
 
                 {/* Character view */}
                 <Route path="/charactersheet">
-                    {/* <CharacterSheet /> */}
+                    <CharacterSheet />
                 </Route>
 
 
