@@ -1,5 +1,7 @@
 import { Col, Container, Row } from "reactstrap";
 import { AbilityScores } from "./AbilityScores";
+import { Proficiency } from "./Proficiency";
+import { Speed } from "./Speed";
 
 export const CharacterSheet = () => {
     return (
@@ -17,8 +19,13 @@ export const CharacterSheet = () => {
                     </Col>
                 </Row>
             </Row>
-            
-            <AbilityScores />
+
+            <Row>
+                <AbilityScores />
+                <Proficiency />
+                <Speed />
+                <p>Health</p>
+            </Row>
 
             <p>Saving Throws</p>
             <Row>
@@ -76,8 +83,6 @@ export const CharacterSheet = () => {
                     </Row>
                 </Col>
             </Row>
-
-            <p>Health</p>
 
             <p>Current</p>
             <p>Max</p>
