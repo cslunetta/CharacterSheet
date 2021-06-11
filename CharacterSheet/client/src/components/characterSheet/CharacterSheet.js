@@ -1,6 +1,7 @@
-import { Button, Col, Container, Input, Row, Table } from "reactstrap";
+import { Col, Container, Row, Table } from "reactstrap";
 import { AbilityScores } from "./AbilityScores";
 import HealthTracker from "./HealthTracker";
+import PassiveSkill from "./PassiveSkill";
 import { Proficiency } from "./Proficiency";
 import SavingThrows from "./SavingThrows";
 import { Speed } from "./Speed";
@@ -34,15 +35,8 @@ export const CharacterSheet = () => {
                     <SavingThrows />
 
                     {/* Passive Skills and Senses */}
-                    <Col>
-                        <Row>Passive Wis (Perception)</Row>
-                        <Row>Passive Int (Investigation)</Row>
-                        <Row>Passive Wis (Insight)</Row>
-                        <Row>Darkvision 60ft.</Row>
-                        <Row>
-                            <p>Senses</p>
-                        </Row>
-                    </Col>
+
+                    <PassiveSkill />
                     {/* End of Passive Skills and Senses */}
                 </Col>
                 {/* end of left column */}
