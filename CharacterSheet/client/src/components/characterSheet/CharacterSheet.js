@@ -4,6 +4,7 @@ import HealthTracker from "./HealthTracker";
 import PassiveSkill from "./PassiveSkill";
 import { Proficiency } from "./Proficiency";
 import SavingThrows from "./SavingThrows";
+import Skills from "./Skills";
 import { Speed } from "./Speed";
 
 export const CharacterSheet = () => {
@@ -33,63 +34,11 @@ export const CharacterSheet = () => {
             <Row>
                 <Col className="leftColumn">
                     <SavingThrows />
-
-                    {/* Passive Skills and Senses */}
-
                     <PassiveSkill />
-                    {/* End of Passive Skills and Senses */}
                 </Col>
                 {/* end of left column */}
                 <Col className="middleColumn">
-                    {/* Skills */}
-                    <Table>
-                        <thead>
-                            <tr>
-                                <th>Prof</th>
-                                <th>Mod</th>
-                                <th>Skill</th>
-                                <th>Bonus</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                            <tr>
-                                <td> O</td>
-                                <td>DEX</td>
-                                <td>Skill Name</td>
-                                <td>+2</td>
-                            </tr>
-                        </tbody>
-                    </Table>
+                    <Skills />
                 </Col>
                 <Col>
                     <Row>
@@ -104,10 +53,20 @@ export const CharacterSheet = () => {
                         </Col>
                     </Row>
                     <Row>
+                        <Row>
+                            <Col>
                         <p>Actions</p>
+                            </Col>
+                            <Col>
                         <p>Equipment</p>
+                            </Col>
+                            <Col>
                         <p>Spells</p>
+                            </Col>
+                            <Col>
                         <p>Features</p>
+                            </Col>
+                        </Row>
                     </Row>
                 </Col>
             </Row>
