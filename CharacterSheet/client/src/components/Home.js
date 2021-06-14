@@ -1,4 +1,8 @@
+import { useHistory } from "react-router";
+import { Button } from "reactstrap";
+
 const Home = () => {
+    const history = useHistory();
     return (
         <>
             <h1>D&D Character Management Tools</h1>
@@ -7,14 +11,22 @@ const Home = () => {
             <h4>Player Tools</h4>
             <ul>
                 <li>Character Creater</li>
-                <li>Character Sheet</li>
+                <li>
+                    <Button onClick={() => history.push("/charactersheet")}>
+                        Character Sheet
+                    </Button>
+                </li>
+                <a></a>
                 <li>Inventory Management System</li>
                 <li>Combat Tracker</li>
                 <ul>
                     <li>See important info on other players and NPC's</li>
                     <li>Customized Character Sheet views for combat</li>
                     <ul>
-                        <li>spellcaster's can prioritize there spell lists and class features</li>
+                        <li>
+                            spellcaster's can prioritize there spell lists and
+                            class features
+                        </li>
                         <li>Ammunition Tracking</li>
                     </ul>
                     <li></li>
@@ -38,7 +50,6 @@ const Home = () => {
                     <li>View Player Characters</li>
                 </ul>
             </ul>
-                
         </>
     );
 };
