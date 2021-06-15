@@ -1,4 +1,4 @@
-import { Col, Container, Row, Table } from "reactstrap";
+import { Button, Col, Container, Row, Table } from "reactstrap";
 import { AbilityScores } from "./AbilityScores";
 import HealthTracker from "./HealthTracker";
 import PassiveSkill from "./PassiveSkill";
@@ -58,7 +58,7 @@ export const CharacterSheet = () => {
                         <p>Actions</p>
                             </Col>
                             <Col>
-                        <p>Equipment</p>
+                        <Button onClick={() => history.push("/inventory")}>Equipment</Button>
                             </Col>
                             <Col>
                         <p>Spells</p>
