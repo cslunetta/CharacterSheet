@@ -16,8 +16,11 @@ const Home = () => {
                         Character Sheet
                     </Button>
                 </li>
-                <a></a>
-                <li>Inventory Management System</li>
+                <li>
+                    <Button onClick={() => history.push("/inventory")}>
+                        Inventory Management
+                    </Button>
+                </li>
                 <li>Combat Tracker</li>
                 <ul>
                     <li>See important info on other players and NPC's</li>
@@ -43,7 +46,7 @@ const Home = () => {
                 <ul>
                     <li>View Player Characters</li>
                     <li>View NPC's</li>
-                    <li>View View Loot</li>
+                    <li>View Loot</li>
                     <ul>
                         <li>give players access to loot to sort themselves</li>
                     </ul>

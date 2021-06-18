@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import { Button, Col, Container, Row, Table } from "reactstrap";
 import { AbilityScores } from "./AbilityScores";
 import HealthTracker from "./HealthTracker";
@@ -8,6 +9,8 @@ import Skills from "./Skills";
 import { Speed } from "./Speed";
 
 export const CharacterSheet = () => {
+    const history = useHistory();
+
     return (
         <Container>
             <Row>
@@ -55,16 +58,20 @@ export const CharacterSheet = () => {
                     <Row>
                         <Row>
                             <Col>
-                        <p>Actions</p>
+                                <p>Actions</p>
                             </Col>
                             <Col>
-                        <Button onClick={() => history.push("/inventory")}>Equipment</Button>
+                                <Button
+                                    onClick={() => history.push("/inventory")}
+                                >
+                                    Equipment
+                                </Button>
                             </Col>
                             <Col>
-                        <p>Spells</p>
+                                <p>Spells</p>
                             </Col>
                             <Col>
-                        <p>Features</p>
+                                <p>Features</p>
                             </Col>
                         </Row>
                     </Row>

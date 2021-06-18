@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import { CharacterSheet } from "./characterSheet/CharacterSheet";
 import Home from "./Home";
+import Inventory from "./inventory/Inventory";
 
 export default function ApplicationViews() {
     return (
@@ -31,6 +32,11 @@ export default function ApplicationViews() {
                 {/* Character view */}
                 <Route path="/charactersheet">
                     <CharacterSheet />
+                </Route>
+
+                {/* Inventory for a Character */}
+                <Route path="/inventory">
+                    <Inventory />
                 </Route>
 
 
